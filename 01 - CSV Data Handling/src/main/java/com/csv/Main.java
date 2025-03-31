@@ -2,6 +2,7 @@ package com.csv;
 
 import com.csv.convertcsv.ConvertCSV;
 import com.csv.convertcsv.Student;
+import com.csv.converter.DataConverter;
 import com.csv.countrows.CountRowsCSV;
 import com.csv.detectduplicates.DetectDuplicates;
 import com.csv.filterrecords.FilterCSV;
@@ -44,6 +45,8 @@ public class Main {
 
 //        MergeCSV.merge("src/main/java/com/csv/mergecsv/content/students1.csv", "src/main/java/com/csv/mergecsv/content/students2.csv");
 
-        DetectDuplicates.detect("src/main/java/com/csv/detectduplicates/content/file.csv");
+//        DetectDuplicates.detect("src/main/java/com/csv/detectduplicates/content/file.csv");
+
+        DataConverter.jsonToCsv("src/main/java/com/csv/converter/content/file.json", "src/main/java/com/csv/converter/content/file.csv");
     }
 }
