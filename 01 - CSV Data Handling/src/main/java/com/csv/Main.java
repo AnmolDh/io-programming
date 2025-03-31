@@ -1,5 +1,7 @@
 package com.csv;
 
+import com.csv.convertcsv.ConvertCSV;
+import com.csv.convertcsv.Student;
 import com.csv.countrows.CountRowsCSV;
 import com.csv.filterrecords.FilterCSV;
 import com.csv.modifyrecord.ModifyCSV;
@@ -11,6 +13,7 @@ import com.csv.validatedata.ValidateCSV;
 import com.csv.writecsv.WriteCSV;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +35,9 @@ public class Main {
 
 //        SortCSV.sort("src/main/java/com/csv/sortrecords/content/Employee.csv");
 
-        ValidateCSV.validate("src/main/java/com/csv/validatedata/content/Contact.csv");
+//        ValidateCSV.validate("src/main/java/com/csv/validatedata/content/Contact.csv");
+
+        List<Student> list = ConvertCSV.convertToObjects("src/main/java/com/csv/convertcsv/content/Student.csv", Student.class);
+        System.out.println(list);
     }
 }
