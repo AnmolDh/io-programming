@@ -37,7 +37,7 @@ public class MergeCSV {
             System.out.println(e.getMessage());
         }
 
-        try (CSVWriter csvWriter = new CSVWriter(new FileWriter("src/main/java/com/csv/mergecsv/content/output.csv"))) {
+        try (CSVWriter csvWriter = new CSVWriter(new FileWriter("src/main/java/com/csv/mergecsv/content/file.csv"))) {
             csvWriter.writeAll(data);
         } catch (Exception e) {
             System.out.println(e.getMessage());
