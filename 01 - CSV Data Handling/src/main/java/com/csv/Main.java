@@ -4,6 +4,7 @@ import com.csv.convertcsv.ConvertCSV;
 import com.csv.convertcsv.Student;
 import com.csv.countrows.CountRowsCSV;
 import com.csv.filterrecords.FilterCSV;
+import com.csv.mergecsv.MergeCSV;
 import com.csv.modifyrecord.ModifyCSV;
 import com.csv.readcsv.ReadCSV;
 import com.csv.searchrecord.SearchCSV;
@@ -37,7 +38,9 @@ public class Main {
 
 //        ValidateCSV.validate("src/main/java/com/csv/validatedata/content/Contact.csv");
 
-        List<Student> list = ConvertCSV.convertToObjects("src/main/java/com/csv/convertcsv/content/Student.csv", Student.class);
-        System.out.println(list);
+//        List<Student> list = ConvertCSV.convertToObjects("src/main/java/com/csv/convertcsv/content/Student.csv", Student.class);
+//        System.out.println(list);
+
+        MergeCSV.merge("src/main/java/com/csv/mergecsv/content/students1.csv", "src/main/java/com/csv/mergecsv/content/students2.csv");
     }
 }
