@@ -5,6 +5,7 @@ import com.csv.filterrecords.FilterCSV;
 import com.csv.modifyrecord.ModifyCSV;
 import com.csv.readcsv.ReadCSV;
 import com.csv.searchrecord.SearchCSV;
+import com.csv.sortrecords.SortCSV;
 import com.csv.writecsv.WriteCSV;
 
 import java.util.ArrayList;
@@ -25,6 +26,8 @@ public class Main {
 
 //        SearchCSV.search("src/main/java/com/csv/searchrecord/content/Employee.csv", "IDK");
 
-        ModifyCSV.modify("src/main/java/com/csv/modifyrecord/content/Employee.csv");
+//        ModifyCSV.modify("src/main/java/com/csv/modifyrecord/content/Employee.csv");
+
+        SortCSV.sort("src/main/java/com/csv/sortrecords/content/Employee.csv");
     }
 }
