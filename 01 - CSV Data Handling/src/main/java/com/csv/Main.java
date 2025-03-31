@@ -2,6 +2,7 @@ package com.csv;
 
 import com.csv.countrows.CountRowsCSV;
 import com.csv.filterrecords.FilterCSV;
+import com.csv.modifyrecord.ModifyCSV;
 import com.csv.readcsv.ReadCSV;
 import com.csv.searchrecord.SearchCSV;
 import com.csv.writecsv.WriteCSV;
@@ -22,6 +23,8 @@ public class Main {
 
 //        FilterCSV.filter("src/main/java/com/csv/filterrecords/content/Student.csv");
 
-        SearchCSV.search("src/main/java/com/csv/searchrecord/content/Employee.csv", "IDK");
+//        SearchCSV.search("src/main/java/com/csv/searchrecord/content/Employee.csv", "IDK");
+
+        ModifyCSV.modify("src/main/java/com/csv/modifyrecord/content/Employee.csv");
     }
 }
