@@ -6,6 +6,8 @@ import com.csv.modifyrecord.ModifyCSV;
 import com.csv.readcsv.ReadCSV;
 import com.csv.searchrecord.SearchCSV;
 import com.csv.sortrecords.SortCSV;
+import com.csv.validatedata.Regex;
+import com.csv.validatedata.ValidateCSV;
 import com.csv.writecsv.WriteCSV;
 
 import java.util.ArrayList;
@@ -28,6 +30,8 @@ public class Main {
 
 //        ModifyCSV.modify("src/main/java/com/csv/modifyrecord/content/Employee.csv");
 
-        SortCSV.sort("src/main/java/com/csv/sortrecords/content/Employee.csv");
+//        SortCSV.sort("src/main/java/com/csv/sortrecords/content/Employee.csv");
+
+        ValidateCSV.validate("src/main/java/com/csv/validatedata/content/Contact.csv");
     }
 }
